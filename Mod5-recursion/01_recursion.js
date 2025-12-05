@@ -1,4 +1,4 @@
-//write a function to print number fron n to 1 using recursion
+//write a function to print number from n to 1 using recursion
 // 1 way
 // function print(num) {
 //   if (num == 0) return 0;
@@ -10,7 +10,7 @@
 // print(n);
 // 2nd way
 // function print(n) {
-//   if (n < 0) return;
+// if (n < 0) return;
 // With n == 0:
 // Stops only when n = 0
 // With n < 1:
@@ -53,7 +53,7 @@ print(1);
 // Use ++x because it is easier to read in recursion.
 ////////when u not pass parameter inside function
 // Your code: works because you pass num again, and each time it becomes smaller (5 → 4 → 3 → 2 → 1 → stop).
-// ❓ What happens if you call func() again without passing num?
+//❓What happens if you call func() again without passing num?
 // Example:
 // func(num); // correct
 // But if you write:
@@ -95,7 +95,7 @@ print(1);
 // ❗ “If num is falsy, then stop.”
 // In JavaScript, these values are considered falsy:
 // 0
-// undefined//undedined =false so !undefined = true ; opposite value
+// undefined//undefined =false so !undefined = true ; opposite value
 // null
 // NaN
 // "" (empty string)
