@@ -1,0 +1,4 @@
+//contructor ?
+//class ?
+//this ?
+//prototype?

@@ -69,7 +69,7 @@
 // let n = 5;
 // for (let i = 0; i < n; i++) {
 //   let row = "";
-//   for (let j = 0; j < n - 1; j++) {
+//   for (let j = 0; j < n - i; j++) {
 //     row = row + (j + 1);
 //   }
 //   console.log(row);
@@ -107,6 +107,7 @@
 //   }
 //   console.log(row);
 // }
+//// in every row i+1 star need to print and n-(i+1) space needed
 /////////////////Program 7 and Program 8 ////////////////////
 // 1
 // 10
@@ -114,31 +115,33 @@
 // 1010
 // 10101
 
-let n = 5;
-let toggle = 1; // if i used here toggle is not refresh again and again so every new row start from 1
-for (let i = 0; i < n; i++) {
-  let row = "";
-  // let toggle = 1;
-  for (let j = 0; j < i; j++) {
-    row = row + toggle;
-    if (toggle == 1) {
-      toggle = 0;
-    } else {
-      toggle = 1;
-    }
-  }
-  console.log(row);
-}
+// let n = 5;
+// let toggle = 1; // if i used here toggle is not refresh again and again so every new row start from 1
+// for (let i = 0; i < n; i++) {
+//   let row = "";
+//   // let toggle = 1;
+//   for (let j = 0; j < i; j++) {
+//     row = row + toggle;
+//     if (toggle == 1) {
+//       toggle = 0;
+//     } else {
+//       toggle = 1;
+//     }
+//   }
+//   console.log(row);
+// }
 /////////suggestion need to go through star patterns again
 /////////////summry
 // Why this is bad
 
 // The inner loop mutates the same counter the outer loop uses. So when the inner loop finishes, the outer loop’s counter is left at some value you didn’t expect.
 // That makes the number of outer iterations unpredictable (often fewer than expected), or in other arrangements it could even cause infinite loops.
-
+// when we use same variable for both loop
 // Rules of thumb / best practices
 
 // Use different variable names for nested loops (commonly i, j, k).
 // Prefer let over var — let gives block scope and avoids many accidental clashes.
 // If you want to re-use the same identifier, you must declare a new let inside the inner block (shadowing) — but using distinct names is clearer.
 // For simple patterns where the inner loop does the same work each row, consider building one row once (like '*'.repeat(n)) and reusing it — that avoids nested counters entirely.
+
+////////////////////////////need to revise prog5, prog6, prog7,prog8

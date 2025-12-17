@@ -19,10 +19,20 @@ for (let i = 5; i < 4; i++) {
 // function inside a loop
 
 function greet(i) {
-  console.log("hello " + i);
+  //use another variable istead of i
+  // This i is a parameter
+  // It is a new variable, local to the function
+  // It has no relation to the loop’s i
+  // console.log("hello " + i);
 }
+// It works because values are passed to function parameters, and let allows safe block-scoping.
 for (let i = 0; i < 5; i++) {
-  // with let i It works because JavaScript is lenient(not strict or forgiving)
+  // without 'let var const' i It works because JavaScript is lenient(not strict or forgiving)
+  // You didn’t declare i using let, var, or const.
+  // A strict language (like Java or C++) would immediately give an error — “variable not declared!”
+  // But JavaScript is lenient, so it says:
+  // “Okay, maybe you meant to make i global,”
+  // and it automatically creates it for you instead of stopping the program.
   greet(i);
 }
 // simple example of global variable

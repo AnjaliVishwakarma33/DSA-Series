@@ -112,9 +112,10 @@ function countNegative(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < 0) {
       count++;
-      negatives += arr[i] + " ";
+      negatives += arr[i] + "  ";
     }
   }
+  // return count;
   console.log(count);
   console.log(negatives);
 }

@@ -1,23 +1,4 @@
 //find second Largest number in an array
-// let arr = [5, 8, 10, 12, 2];
-// function findLargest() {
-//   function findLargest() {
-//     let Largest = arr[0];
-//     for (let i = 0; i < arr.length; i++) {
-//       if (arr[i] > Largest) {
-//         Largest = arr[i];
-//       }
-//     }
-//     return Largest;
-//   }
-//   let largeNumber = findLargest();
-//   let second;
-//   if (largeNumber > arr[i]) {
-//     second = arr[i];
-//     if (second > arr[i]) {
-//     }
-//   }
-// }
 
 let arr = [4, 9, 0, 2, 8, 9, 7, 1];
 // let arr = [9, 9, 9, 9, 9];
@@ -37,7 +18,7 @@ function findSecondLargest() {
       secondlargest = arr[i];
     }
   }
-  // return second === -Infinity ? null : second;
+  // return secondlargest === -Infinity ? null : secondlargest;
   if (secondlargest === -Infinity) {
     return null;
   } else {
@@ -69,3 +50,5 @@ console.log(result);
 // Problem:
 // If arr[0] itself is Infinity, then your loop starts with largest = Infinity.
 // Now, the loop will never update largest, because nothing is greater than Infinity.
+
+//////////need to revise again and again
