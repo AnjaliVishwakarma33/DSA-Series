@@ -1,5 +1,7 @@
 // Array Series
-// Remove Duplicates
+// Remove Duplicates from sorted array using 2 pointers (in-place)
+// integer= -ve as well as +ve
+// non decreasing order ?= means it has a duplicates as well
 // function removeDuplicates(arr) {
 //   count = 0;
 //   current = 0;
